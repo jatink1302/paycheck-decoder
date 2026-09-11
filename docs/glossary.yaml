@@ -1,0 +1,119 @@
+# Glossary outline -- Week 1 deliverable per the project brief timeline
+# ("draft the canonical schema and the glossary outline").
+#
+# This is a DRAFT OUTLINE, not the finished glossary. Week 3 finishes
+# the set to at least 30 terms, adds payroll-system aliases, splits each
+# explanation into `explanation` + `why_it_matters`, and runs every
+# entry through textstat to confirm Flesch-Kincaid grade <= 8.0 (F2).
+#
+# The 20 entries below are copied from Appendix A of the project brief
+# (the fellow's own authoritative source document), not invented here.
+# `aliases` is left empty for each -- populating payroll-system
+# abbreviations is explicitly Week 3 work.
+
+terms:
+  - term: Gross pay
+    aliases: []
+    explanation: Everything you earned this period before anything was taken out.
+    why_it_matters: null # TODO Week 3
+
+  - term: Net pay
+    aliases: []
+    explanation: What actually lands in your account or on your check after taxes and deductions.
+    why_it_matters: null
+
+  - term: Regular hours and rate
+    aliases: []
+    explanation: The hours you worked up to 40 in the week, and the hourly amount you were promised for them.
+    why_it_matters: null
+
+  - term: Overtime (OT)
+    aliases: []
+    explanation: Hours over 40 in one workweek. Each one must be paid at least one and a half times your regular rate.
+    why_it_matters: null
+
+  - term: FICA
+    aliases: []
+    explanation: The federal payroll taxes that fund Social Security and Medicare. Your employer pays a matching share.
+    why_it_matters: null
+
+  - term: Social Security (OASDI)
+    aliases: []
+    explanation: 6.2 percent of your pay, up to a yearly cap. It funds retirement, disability, and survivor benefits.
+    why_it_matters: null
+
+  - term: Medicare (HI)
+    aliases: []
+    explanation: 1.45 percent of your pay with no cap. High earners pay an extra 0.9 percent above $200,000.
+    why_it_matters: null
+
+  - term: Federal income tax withheld
+    aliases: []
+    explanation: A prepayment of your federal income tax. The amount depends on your pay and the answers on your W-4.
+    why_it_matters: null
+
+  - term: Illinois income tax withheld
+    aliases: []
+    explanation: A prepayment of your Illinois tax at a flat 4.95 percent, reduced by the exemptions you claimed on your IL-W-4.
+    why_it_matters: null
+
+  - term: W-4
+    aliases: []
+    explanation: The federal form where you tell your employer about filing status, dependents, and other jobs so they can withhold the right amount.
+    why_it_matters: null
+
+  - term: IL-W-4
+    aliases: []
+    explanation: The Illinois form where you claim exemptions that reduce state withholding.
+    why_it_matters: null
+
+  - term: Pre-tax deduction
+    aliases: []
+    explanation: Money taken out before taxes are figured, such as most health premiums and 401(k) contributions. It lowers your taxable pay.
+    why_it_matters: null
+
+  - term: Post-tax deduction
+    aliases: []
+    explanation: Money taken out after taxes, such as union dues, Roth 401(k) contributions, or a wage garnishment.
+    why_it_matters: null
+
+  - term: 401(k) or 403(b)
+    aliases: []
+    explanation: Retirement savings taken from your pay. Traditional contributions are pre-tax; Roth contributions are post-tax.
+    why_it_matters: null
+
+  - term: Health, dental, vision premium
+    aliases: []
+    explanation: Your share of insurance costs. Illinois requires your written consent for most deductions, so you should recognize every one.
+    why_it_matters: null
+
+  - term: Year to date (YTD)
+    aliases: []
+    explanation: The running total since January 1. YTD columns let you check that this period's numbers add up with last period's.
+    why_it_matters: null
+
+  - term: Pay period and pay date
+    aliases: []
+    explanation: The span of days this check covers and the day it was paid. They are often different.
+    why_it_matters: null
+
+  - term: Taxable wages
+    aliases: []
+    explanation: Gross pay minus pre-tax deductions. This is the number taxes are actually figured on.
+    why_it_matters: null
+
+  - term: Tip credit
+    aliases: []
+    explanation: The amount of tips an employer may count toward the minimum wage. Chicago is phasing this out.
+    why_it_matters: null
+
+  - term: Minimum wage
+    aliases: []
+    explanation: The lowest hourly rate you can legally be paid. In Chicago it is higher than the Illinois rate, which is higher than the federal rate.
+    why_it_matters: null
+
+# At least 10 more terms needed by Week 3 to reach the 30-term minimum
+# (F2). Candidates already implied by the canonical schema/Appendix C
+# and not yet covered above: workweek, effective hourly rate, wage
+# claim, Additional Medicare tax, exemption/allowance, filing status,
+# Step 2/3/4 (W-4), tipped wage, youth wage, garnishment.

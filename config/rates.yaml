@@ -1,0 +1,219 @@
+# Effective-dated wage/tax rules, per Step 2.4 of the project brief.
+#
+# THIS FILE IS A SCHEMA WITH PLACEHOLDER ROWS ONLY. Every `value: null`
+# below must stay null until you have personally verified it against the
+# source_url listed, and filled in verified_on with that date. Do not
+# fill a value from memory, training data, or this brief's Section 5.2
+# "value known at drafting" column -- that column is explicitly a
+# starting point to verify, not a source.
+#
+# The rules engine (Week 2) reads rates ONLY from this file. No rule
+# function may contain a numeric tax/wage constant of its own.
+#
+# Field meanings match docs/rules_register.csv one-for-one; this file is
+# meant to be regenerated from the register once rows are verified there
+# (see docs/rules_register.csv's header comment).
+
+rules:
+  - rule_id: federal_minimum_wage
+    jurisdiction: federal
+    rule_name: Federal minimum wage (FLSA)
+    value: null
+    unit: usd_per_hour
+    effective_from: null
+    effective_to: null
+    source_name: DOL Wage and Hour Division, Fair Labor Standards Act
+    source_url: https://www.dol.gov/agencies/whd/flsa
+    section_or_table: null
+    verified_on: null
+    notes: Unverified. See Section 5.2 of the project brief for the value to check.
+
+  - rule_id: illinois_minimum_wage
+    jurisdiction: illinois_other
+    rule_name: Illinois minimum wage (standard)
+    value: null
+    unit: usd_per_hour
+    effective_from: null
+    effective_to: null
+    source_name: Illinois Department of Labor, Minimum Wage Law
+    source_url: https://labor.illinois.gov/laws-rules/fls/minimum-wage-law.html
+    section_or_table: null
+    verified_on: null
+    notes: Unverified.
+
+  - rule_id: illinois_minimum_wage_tipped
+    jurisdiction: illinois_other
+    rule_name: Illinois tipped minimum wage
+    value: null
+    unit: usd_per_hour
+    effective_from: null
+    effective_to: null
+    source_name: Illinois Department of Labor, Minimum Wage Law
+    source_url: https://labor.illinois.gov/laws-rules/fls/minimum-wage-law.html
+    section_or_table: null
+    verified_on: null
+    notes: Unverified.
+
+  - rule_id: illinois_minimum_wage_youth
+    jurisdiction: illinois_other
+    rule_name: Illinois youth minimum wage (under 18, under 650 hrs/yr)
+    value: null
+    unit: usd_per_hour
+    effective_from: null
+    effective_to: null
+    source_name: Illinois Department of Labor, Minimum Wage Law
+    source_url: https://labor.illinois.gov/laws-rules/fls/minimum-wage-law.html
+    section_or_table: null
+    verified_on: null
+    notes: Unverified. Confirm the hours-per-year threshold too, not just the rate.
+
+  - rule_id: cook_county_minimum_wage
+    jurisdiction: cook_county
+    rule_name: Cook County minimum wage
+    value: null
+    unit: usd_per_hour
+    effective_from: null
+    effective_to: null
+    source_name: Cook County Minimum Wage Ordinance
+    source_url: https://www.cookcountyil.gov/service/minimum-wage-ordinance
+    section_or_table: null
+    verified_on: null
+    notes: Brief states this tracks the state rate -- verify it has not diverged.
+
+  - rule_id: chicago_minimum_wage
+    jurisdiction: chicago
+    rule_name: Chicago minimum wage (employers with 4+ employees)
+    value: null
+    unit: usd_per_hour
+    effective_from: null
+    effective_to: null
+    source_name: City of Chicago BACP, Minimum Wage Information
+    source_url: https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html
+    section_or_table: null
+    verified_on: null
+    notes: Adjusts every July 1. Confirm the current-year July 1 adjustment specifically.
+
+  - rule_id: chicago_minimum_wage_tipped
+    jurisdiction: chicago
+    rule_name: Chicago tipped minimum wage
+    value: null
+    unit: usd_per_hour
+    effective_from: null
+    effective_to: null
+    source_name: City of Chicago BACP, Minimum Wage Information
+    source_url: https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html
+    section_or_table: null
+    verified_on: null
+    notes: Brief notes the tip credit is being phased out -- verify current status.
+
+  - rule_id: overtime_multiplier
+    jurisdiction: federal
+    rule_name: Overtime multiplier (hours over 40 in a workweek)
+    value: null
+    unit: multiplier
+    effective_from: null
+    effective_to: null
+    source_name: DOL Fact Sheet 23, Overtime Pay Requirements of the FLSA
+    source_url: https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime
+    section_or_table: null
+    verified_on: null
+    notes: Expected to verify as 1.5. Confirm rather than assume.
+
+  - rule_id: social_security_rate_employee
+    jurisdiction: federal
+    rule_name: Social Security (OASDI) employee share
+    value: null
+    unit: percent
+    effective_from: null
+    effective_to: null
+    source_name: IRS Tax Topic 751
+    source_url: https://www.irs.gov/taxtopics/tc751
+    section_or_table: null
+    verified_on: null
+    notes: Unverified.
+
+  - rule_id: social_security_wage_base
+    jurisdiction: federal
+    rule_name: Social Security contribution and benefit base
+    value: null
+    unit: usd_per_year
+    effective_from: null
+    effective_to: null
+    source_name: Social Security Administration, Contribution and Benefit Base
+    source_url: https://www.ssa.gov/oact/cola/cbb.html
+    section_or_table: null
+    verified_on: null
+    notes: Changes annually -- must confirm the value for the tax year being modeled.
+
+  - rule_id: medicare_rate_employee
+    jurisdiction: federal
+    rule_name: Medicare (HI) employee share
+    value: null
+    unit: percent
+    effective_from: null
+    effective_to: null
+    source_name: IRS Tax Topic 751
+    source_url: https://www.irs.gov/taxtopics/tc751
+    section_or_table: null
+    verified_on: null
+    notes: Unverified.
+
+  - rule_id: additional_medicare_rate
+    jurisdiction: federal
+    rule_name: Additional Medicare tax rate
+    value: null
+    unit: percent
+    effective_from: null
+    effective_to: null
+    source_name: IRS Tax Topic 751
+    source_url: https://www.irs.gov/taxtopics/tc751
+    section_or_table: null
+    verified_on: null
+    notes: Unverified.
+
+  - rule_id: additional_medicare_threshold
+    jurisdiction: federal
+    rule_name: Additional Medicare tax wage threshold
+    value: null
+    unit: usd_per_year
+    effective_from: null
+    effective_to: null
+    source_name: IRS Tax Topic 751
+    source_url: https://www.irs.gov/taxtopics/tc751
+    section_or_table: null
+    verified_on: null
+    notes: Unverified.
+
+  - rule_id: illinois_income_tax_rate
+    jurisdiction: illinois_other
+    rule_name: Illinois flat income tax rate
+    value: null
+    unit: percent
+    effective_from: null
+    effective_to: null
+    source_name: Illinois Department of Revenue, Booklet IL-700-T
+    source_url: https://tax.illinois.gov/forms/withholding.html
+    section_or_table: null
+    verified_on: null
+    notes: Unverified.
+
+  - rule_id: illinois_exemption_allowance
+    jurisdiction: illinois_other
+    rule_name: Illinois per-exemption allowance value
+    value: null
+    unit: usd_per_year
+    effective_from: null
+    effective_to: null
+    source_name: Illinois Department of Revenue, Booklet IL-700-T
+    source_url: https://tax.illinois.gov/forms/withholding.html
+    section_or_table: null
+    verified_on: null
+    notes: Unverified. Changes annually.
+
+  # Federal Publication 15-T Worksheet 1A percentage-method brackets and
+  # the federal standard deduction table are each multi-row structures
+  # (they vary by filing status and pay frequency), not a single
+  # rule_id/value pair. They will be added here as their own list(s)
+  # once verified in Week 1/2 -- do not collapse them into a single
+  # placeholder value, and do not invent bracket edges to fill this gap
+  # now. See docs/open_questions.md.

@@ -1,0 +1,13 @@
+# Pinned per Step 1.3 of the project brief. Update deliberately (see
+# docs/updating_rates.md, a later-week deliverable, for the rates side
+# of "update deliberately" -- this file is just package versions).
+pandas==3.0.5
+pydantic==2.13.5
+pyyaml==6.0.3
+pytest==9.1.1
+faker==40.38.0
+openpyxl==3.1.5
+streamlit==1.63.0
+plotly==7.0.0
+textstat==0.7.13
+ruff==0.16.7

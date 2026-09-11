@@ -1,0 +1,18 @@
+rule_id,jurisdiction,rule_name,value,unit,effective_from,effective_to,source_name,source_url,section_or_table,verified_on,notes
+federal_minimum_wage,federal,Federal minimum wage (FLSA),,usd_per_hour,,,DOL Wage and Hour Division FLSA,https://www.dol.gov/agencies/whd/flsa,,,Unverified -- verify before encoding in config/rates.yaml
+illinois_minimum_wage,illinois_other,Illinois minimum wage (standard),,usd_per_hour,,,Illinois Department of Labor Minimum Wage Law,https://labor.illinois.gov/laws-rules/fls/minimum-wage-law.html,,,Unverified
+illinois_minimum_wage_tipped,illinois_other,Illinois tipped minimum wage,,usd_per_hour,,,Illinois Department of Labor Minimum Wage Law,https://labor.illinois.gov/laws-rules/fls/minimum-wage-law.html,,,Unverified
+illinois_minimum_wage_youth,illinois_other,Illinois youth minimum wage (under 18 under 650 hrs/yr),,usd_per_hour,,,Illinois Department of Labor Minimum Wage Law,https://labor.illinois.gov/laws-rules/fls/minimum-wage-law.html,,,Unverified -- also confirm the annual hours threshold
+cook_county_minimum_wage,cook_county,Cook County minimum wage,,usd_per_hour,,,Cook County Minimum Wage Ordinance,https://www.cookcountyil.gov/service/minimum-wage-ordinance,,,Unverified -- confirm it still tracks the state rate
+chicago_minimum_wage,chicago,Chicago minimum wage (4+ employees),,usd_per_hour,,,City of Chicago BACP Minimum Wage Information,https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html,,,Unverified -- adjusts every July 1; confirm current adjustment
+chicago_minimum_wage_tipped,chicago,Chicago tipped minimum wage,,usd_per_hour,,,City of Chicago BACP Minimum Wage Information,https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html,,,Unverified -- tip credit is phasing out, confirm current status
+overtime_multiplier,federal,Overtime multiplier over 40 hrs/workweek,,multiplier,,,DOL Fact Sheet 23,https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime,,,Unverified
+social_security_rate_employee,federal,Social Security (OASDI) employee share,,percent,,,IRS Tax Topic 751,https://www.irs.gov/taxtopics/tc751,,,Unverified
+social_security_wage_base,federal,Social Security contribution and benefit base,,usd_per_year,,,SSA Contribution and Benefit Base,https://www.ssa.gov/oact/cola/cbb.html,,,Unverified -- changes annually
+medicare_rate_employee,federal,Medicare (HI) employee share,,percent,,,IRS Tax Topic 751,https://www.irs.gov/taxtopics/tc751,,,Unverified
+additional_medicare_rate,federal,Additional Medicare tax rate,,percent,,,IRS Tax Topic 751,https://www.irs.gov/taxtopics/tc751,,,Unverified
+additional_medicare_threshold,federal,Additional Medicare tax wage threshold,,usd_per_year,,,IRS Tax Topic 751,https://www.irs.gov/taxtopics/tc751,,,Unverified
+illinois_income_tax_rate,illinois_other,Illinois flat income tax rate,,percent,,,IL Dept of Revenue Booklet IL-700-T,https://tax.illinois.gov/forms/withholding.html,,,Unverified
+illinois_exemption_allowance,illinois_other,Illinois per-exemption allowance value,,usd_per_year,,,IL Dept of Revenue Booklet IL-700-T,https://tax.illinois.gov/forms/withholding.html,,,Unverified -- changes annually
+federal_percentage_method_bracket,federal,Federal Pub 15-T Worksheet 1A percentage-method bracket (multi-row),,mixed,,,IRS Publication 15-T,https://www.irs.gov/publications/p15t,Worksheet 1A,,Not yet entered -- one row per filing-status/frequency bracket edge; do not collapse into a single value
+federal_standard_deduction,federal,Federal standard deduction (by filing status),,usd_per_year,,,IRS Newsroom revenue procedure for the tax year,https://www.irs.gov/newsroom,,,Not yet entered -- one row per filing status

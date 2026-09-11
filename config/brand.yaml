@@ -1,0 +1,13 @@
+# White-label configuration (F11). A branded build is produced from the
+# same codebase by changing only this file -- no code changes.
+#
+# This is example/placeholder branding, not a legal or tax value, so it
+# is fine to have realistic-looking defaults here. Replace before any
+# real deployment.
+
+organization_name: ChiEAC
+logo_path: assets/logo.svg
+primary_color: "#0B3D91"
+accent_color: "#F2A900"
+contact_line: "Questions? Contact ChiEAC at info@example.org"
+workshop_mode: false # hides advanced panels for in-person workshop use

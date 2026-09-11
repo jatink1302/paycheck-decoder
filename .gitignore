@@ -1,0 +1,28 @@
+# Real pay data must never be committed. Only data/synthetic/ is tracked.
+data/*
+!data/synthetic/
+!data/synthetic/.gitkeep
+
+# Common real-stub file types, wherever they might land by accident.
+*.pdf
+*.qbo
+*.iif
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
